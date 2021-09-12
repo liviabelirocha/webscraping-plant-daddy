@@ -156,6 +156,4 @@ if 'bloom-color' in df.columns:
 
 df = df.dropna()
 
-from google.colab import files
-df.to_csv('plants.csv', index=False) 
-files.download('plants.csv')
+df.to_csv('./plants.csv', index=False) 
